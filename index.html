@@ -6,10 +6,45 @@
   <title>Simon</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- font awsome -->
+  <script src="https://kit.fontawesome.com/d0b05572fd.js" crossorigin="anonymous"></script>
+  <!-- <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon"> -->
+
 </head>
 
 <body>
   <h1 id="level-title" class="top-head">Press A Key to Start</h1>
+
+
+
+
+  <div class="block">
+    <div id="item">
+      <div id="highlight" class="hover-state"></div>
+      <span>.Click Here For Info.</span>
+    </div>
+  </div>
+
+
+  <!-- <div class="info">
+
+    <h1>i</h1>
+  </div> -->
+
+  <div class="rules hidden">
+
+    <h1>:RULES:</h1>
+    <h3>1. Press any key to begin.</h3>
+    <h3>2. When the color gets highlighted press that color</h3>
+    <h3>3. Now when the next color gets highlighted press all the colors that were highlighted in correct sequence</h3>
+    <h3>4. Create your own high score and compete with your friends</h3>
+
+  </div>
+
+
   <div class="container">
     <div lass="row">
 
@@ -30,6 +65,12 @@
       <div type="button" id="blue" class="btn blue">
 
       </div>
+
+    </div>
+
+    <div class="start-btn">
+
+      <button>START</button>
 
     </div>
     <h3 class="high-score">High Score:</h3>
