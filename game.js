@@ -11,18 +11,44 @@ let start = false;
 let highScore = 0;
 
 // $(".high-score").text("High Score: " + level);
+
+$(".block").click(function(){
+
+        $(".rules").toggle();
+        
+    });
+
 gameStart();
 
 function gameStart() {
+
     $(document).keypress(function(){
         if (!start) {
 
+            $(".block").css("display", "none");
+
             gameOn();
+            
             start = true
             $(".top-head").text("Level: 1");
         }
-
+        
     });
+
+    $(".start-btn").click(function(){
+        if (!start) {
+
+            $(".block").css("display", "none");
+
+            gameOn();
+            
+            start = true
+            $(".top-head").text("Level: 1");
+        }
+        
+    });
+
+    
 }
 
 function gameOn() {
@@ -36,6 +62,12 @@ function gameOn() {
 
 }
 
+$(".start-btn").click(function(){
+    $(".start-btn").addClass("pressed");
+    setTimeout(function () {
+        $(".start-btn").removeClass("pressed");
+    }, 100);
+});
 
 
 $(".btn").click(function () {
@@ -106,9 +138,3 @@ function checkAnswer(level) {
     }
 
 }
-
-
-
-
-
-
